@@ -128,6 +128,37 @@ body {
   border-radius: 0px 0px 100px 100px;
 }
 
+#container-flex-item {
+  display: flex;
+  gap: 2rem;
+}
+
+#me {
+  width: 35vw;
+  height: auto;
+  border-radius: 40px;
+}
+
+#skills-images {
+  display: flex;
+  gap: 4rem;
+}
+
+.skills-icon {
+  width: 5vw;
+  height: auto;
+}
+
+#skills-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.cards {
+  display: flex;
+}
+
 #work {
   width: 10vw;
   height: 10vw;
@@ -145,6 +176,49 @@ body {
   z-index: 4;
   transition: 0.4s ease-in-out;
   border-radius: 0px 0px 100px 100px;
+}
+
+.project-img {
+  width: 40vw;
+  height: auto;
+  border-radius: 40px;
+  display: block;
+  box-shadow: 0 0 10px 8px rgba(255, 255, 240, 0.4901960784);
+  transition: 0.4s ease-in-out;
+}
+
+.project-img:hover {
+  transform: scale(1.1);
+}
+
+.project button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#magnify {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.92);
+  position: fixed;
+  z-index: 4;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#magnify h1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px 40px;
+  color: #fff;
+  transition: 0.4s ease-in-out;
+}
+
+#magnify h1:hover {
+  color: rgb(255, 44, 90);
+  cursor: pointer;
 }
 
 #contact {
@@ -203,7 +277,7 @@ body {
 
 .social:hover {
   cursor: pointer;
-  background: rgba(187, 28, 103, 0.85);
+  color: rgb(255, 50, 50);
 }
 
 .container {
@@ -228,21 +302,25 @@ body {
   transition: 0.4s ease-in-out;
 }
 
-.container div:hover {
-  cursor: pointer;
-}
-
 .container section {
   margin: 8vh 0px;
 }
 
 #used div {
-  font-size: 14px !important;
+  font-size: 16px !important;
   display: inline-block;
   padding: 8px 10px;
   border: 2px solid #fff;
   margin: 0px 10px;
   border-radius: 50px;
+}
+
+#used {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 1rem;
+  margin: 2.5rem 0;
 }
 
 #used:hover {
@@ -259,7 +337,7 @@ body {
 }
 
 .container p {
-  font-size: 21px;
+  font-size: 22px;
 }
 
 .btn_one, .btn_two {
@@ -277,7 +355,7 @@ body {
 
 .btn_one:hover, .btn_two:hover {
   cursor: pointer;
-  color: rgb(255, 50, 50);
+  color: rgb(187, 28, 103);
   background: #fff;
   cursor: pointer;
   padding: 8px 60px;
@@ -339,12 +417,14 @@ body {
   color: #fff;
   width: 92vw;
   padding: 5vh 4vw;
-  text-align: right;
   position: fixed;
   z-index: 1;
   bottom: 0;
   font-size: 16px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #footer a {
@@ -454,4 +534,14 @@ body {
   background-color: rgba(255, 255, 240, 0.209);
   transition: 250ms ease-in-out;
   cursor: pointer;
+}
+
+.sent {
+  display: none;
+}
+
+.sent-visible {
+  text-align: center;
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=index2.css.map */
